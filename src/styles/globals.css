@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Theme */
+  --primary-text: #000000;
+  --background: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #ffffff;
+    --background: #000000;
+  }
+}
+
+body {
+  @apply bg-background text-primary-text font-primary;
+}
+
+@font-face {
+  font-family: "diatype";
+  src: url("/assets/fonts/diatype.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
